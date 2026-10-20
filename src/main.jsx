@@ -93,10 +93,13 @@ function App() {
             <div className="eyebrow"><span className="status-dot" /> OPEN TO SOFTWARE INTERNSHIPS</div>
             <h1>Building my path<br />in <span className="gradient-text">technology.</span></h1>
             <p className="hero-subtitle">Hey, I'm <strong>Bhavana Biradar</strong> — an Electronics & Communication Engineering student exploring software development, web technologies, and ideas that solve real problems.</p>
-            <div className="hero-actions">
-              <a className="button button-primary" href="#projects">Explore my work <ArrowUpRight size={17} /></a>
-              <a className="button button-ghost" href="https://github.com/bhavanabiradar" target="_blank" rel="noreferrer"><Github size={17} /> GitHub profile</a>
-            </div>
+          
+<div className="hero-actions">
+  <a className="button button-primary" href="#projects">Explore my work <ArrowUpRight size={17} /></a>
+  <a className="button button-ghost" href="https://github.com/bhavanabiradar" target="_blank" rel="noreferrer"><Github size={17} /> GitHub profile</a>
+  <a className="button button-ghost" href="/resume.pdf" download>Download Resume <ArrowDown size={17} /></a>
+</div>
+
             <div className="hero-meta">
               <div><span className="meta-number">8.5/10</span><span className="meta-label">CGPA</span></div>
               <div className="meta-divider" />
