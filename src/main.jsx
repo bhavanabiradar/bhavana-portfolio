@@ -4,7 +4,7 @@ import { ArrowUpRight, Github, Mail, Code2, Cpu, Sparkles, ExternalLink, Menu, X
 import "./styles.css";
 
 const projects = [
- {number:"01",title:"RealityOS",type:"Independently built · AI platform",description:"An AI-powered productivity platform I independently designed and built, featuring task management, smart planning, decision support, and an AI assistant.",tags:["Full-Stack Development","AI Integration","Product Design"],link:"https://github.com/bhavanabiradar/realityos",linkLabel:"View repository"},
+ {number:"01",title:"RealityOS",type:"Independently built · AI productivity platform",description:"An AI-powered productivity platform independently designed and built by me, with features for task management, smart planning, decision support, and an AI assistant.",tags:["Independent project","AI integration","Product development"],link:"https://github.com/bhavanabiradar/realityos",linkLabel:"View repository"},
  {number:"02",title:"MochaTrade",type:"Virtual trading simulator",description:"A team project centered on an educational virtual-trading experience. Add the exact features you worked on as you refine the project details.",tags:["Team project","Web development"],link:"https://github.com/bhavanabiradar/Mochatrade-V",linkLabel:"View repository"},
  {number:"03",title:"Smart Blind Stick",type:"Assistive technology",description:"A collaborative assistive-technology project exploring obstacle detection and feedback to support mobility. Hardware and implementation details can be added once confirmed.",tags:["Assistive tech","ECE"],link:"",linkLabel:""},
  {number:"04",title:"Weather Station Anomaly Detection",type:"SIH project",description:"A team project topic focused on AI/ML-based intelligent anomaly detection for Automatic Weather Station (AWS) data.",tags:["AI/ML","Weather data","Team project"],link:"",linkLabel:""},
@@ -19,7 +19,7 @@ function App(){
  const closeMenu=()=>setMenuOpen(false);
  return <div className="site-shell" id="home">
   <header className="site-header"><nav className="nav container" aria-label="Main navigation">
-   <a className="brand" href="#home" onClick={closeMenu}><span className="brand-mark">B.</span><span>Bhavana Biradar</span>
+   <a className="brand" href="#home" onClick={closeMenu}><span className="brand-mark">B.</span><span>Bhavana Biradar</span></a>
    <button className="menu-toggle" onClick={()=>setMenuOpen(!menuOpen)} aria-label="Toggle navigation">{menuOpen?<X size={21}/>:<Menu size={21}/>}</button>
    <div className={`nav-links ${menuOpen?"nav-links-open":""}`}><a href="#home" onClick={closeMenu}>Home</a><a href="#about" onClick={closeMenu}>About</a><a href="#skills" onClick={closeMenu}>Skills</a><a href="#projects" onClick={closeMenu}>My Projects</a><a href="#contact" onClick={closeMenu}>Contact Me</a><a className="nav-resume" href="/resume.pdf" download onClick={closeMenu}><Download size={15}/> Resume</a></div>
   </nav></header>
